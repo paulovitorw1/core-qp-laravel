@@ -1,18 +1,22 @@
 # Core-qp-laravel
+## Ambiente de Desenvolvimento
 
+- **Composer**: 2.0.9
+- **PHP**: 8.2.8
+- **Laravel**: 9.19
 ## Instalação
 
 1. Clone o repositório do projeto:
      ```shell
-    git clone https://github.com/paulovitorw1/core-qp-laravel.git
+    git clone https://github.com/paulovitorw1/core-plan-marketing.git
     ```
 2. Instale as dependências do projeto:
    ```shell
-    composer install
+   composer install
    ```
 3. Copie o arquivo de configuração .env:
      ```shell
-        cp .env.example .env
+    cp .env.example .env
       ```
 4. Configure o arquivo .env com as informações da API:
      ```shell
