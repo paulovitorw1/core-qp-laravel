@@ -4,7 +4,7 @@
 
 1. Clone o repositório do projeto:
      ```shell
-    git clone https://github.com/paulovitorw1/core-plan-marketing.git
+    git clone https://github.com/paulovitorw1/core-qp-laravel.git
     ```
 2. Instale as dependências do projeto:
    ```shell
