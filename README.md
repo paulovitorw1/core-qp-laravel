@@ -68,7 +68,7 @@ Nenhum.
 }
 ```
 
-## Endpoint: POST /api/search/passage
+## POST /api/search/passage
 
 Este endpoint permite pesquisar passagens com base nos critérios fornecidos.
 
@@ -79,8 +79,8 @@ O corpo da solicitação deve conter os seguintes parâmetros:
 - `from` (string): O nome da cidade de partida.
 - `to` (string): O nome da cidade de chegada.
 - `travelDate` (string): A data da viagem no formato "YYYY-MM-DD".
-- `nameDepartureCity` (string): O nome da cidade de partida (opcional, usado para validação).
-- `nameArrivalCity` (string): O nome da cidade de chegada (opcional, usado para validação).
+- `nameDepartureCity` (string): O nome da cidade de partida.
+- `nameArrivalCity` (string): O nome da cidade de chegada.
 
 ### Exemplo de solicitação
 
