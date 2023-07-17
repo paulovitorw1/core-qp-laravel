@@ -56,8 +56,8 @@ class ApiService
      */
     public function fetchTravel(array $request): array
     {
-        $nameDepartureCity = Str::contains(Str::upper($request['nameDepartureCity']), ['SP', 'PR']);
-        $nameArrivalCity = Str::contains(Str::upper($request['nameArrivalCity']), ['SP', 'PR']);
+        $nameDepartureCity = Str::contains(Str::upper($request['nameDepartureCity']), [', SP', ', PR']);
+        $nameArrivalCity = Str::contains(Str::upper($request['nameArrivalCity']), [', SP', ', PR']);
         if (!$nameDepartureCity || !$nameArrivalCity) {
             throw new \Exception('Tickets available only for cities in SP and PR', 422);
         }
@@ -89,7 +89,6 @@ class ApiService
         ])->post($this->baseUrl . '/new/seats', [
             'travelId' => $travelId,
         ]);
-
         return $response->json();
     }
 
